@@ -8,6 +8,7 @@ class AppRouter extends Component {
             <div>
                 <Router>
                     <Routes>
+                        <Route path='/' Component={Teste} ></Route>
                         <Route path='/teste' Component={Teste} ></Route>  
                     </Routes>    
                 
