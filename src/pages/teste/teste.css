@@ -1,0 +1,24 @@
+
+textarea {
+    resize: none;
+    border: none;
+    padding: 5px;
+    background-color: #3c3d46;
+    color: white;
+    outline: none;
+    font-size: 24px;
+    text-align: justify;
+    width: 90vh;
+  }
+  
+  textarea#result{
+    height: 60vh;
+  }
+  
+  textarea#inputQuestion{
+    height: 30vh;
+  }
+  
+  textarea:focus {
+    border: 1px solid #8257e5;
+  }
