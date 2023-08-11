@@ -12,11 +12,11 @@ export default function Teste() {
 
     function handleSubmit(event) {
         if(event.keyCode === 13 && event.shiftKey === false){
-        setAnswer('...')
+        setAnswer('Loading ...')
         const params= {
-            model : "text-davinci-003",
+            model : "text-davinci-002",
             prompt: question,
-            max_tokens: 4000,
+            max_tokens: 3000,
             temperature: 1,
         };
 
@@ -28,6 +28,7 @@ export default function Teste() {
             })
             .catch(err => {
                 setAnswer('Ocorreu um problema')
+                console.log(err)
                 setQuestion('')
             });
     }
